@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <title>Bookmarker</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="text-center mt-5">
+        <h1>Bookmarker</h1>
+        <hr />
+        <div class="bookmark-title">
+          <h2>
+            <i class="fa-solid color-1 fa-bookmark"></i> Bookmark your
+            <span>favorite sites</span>
+            <i class="fa-solid color-2 fa-bookmark"></i>
+          </h2>
+        </div>
+      </header>
+      <div class="row">
+        <div class="col-md-12 offset-md-2 m-auto">
+          <form id="bookmarkForm">
+            <div class="mb-3">
+              <label for="siteName" class="form-label"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="siteName"
+                placeholder="Bookmark Name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="siteURL" class="form-label"><i class="fa-solid fa-link"></i> Site URL</label>
+              <input
+                type="url"
+                class="form-control"
+                id="siteURL"
+                placeholder="Website URL"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary d-block m-auto">
+              Submit
+            </button>
+          </form>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-12 offset-md-2 m-auto">
+          <table class="table table-striped" id="bookmarkList">
+            <thead>
+              <tr>
+                <th scope="col">Index</th>
+                <th scope="col">Website Name</th>
+                <th scope="col">Visit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="bookmarkTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

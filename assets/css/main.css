@@ -1,0 +1,97 @@
+body {
+  background-color: #f7ecde; 
+  font-family: "Open Sans", sans-serif; 
+}
+
+.container {
+  margin: auto;
+  max-width: 75%; 
+  padding: 30px;
+  border-radius: 10px;
+  
+}
+
+h1 {
+  font-family: "Pacifico", cursive; 
+  font-size: 4em;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+hr {
+  border-top: 1px dashed #000000; 
+  width: 100%;
+  margin: 40px 0;
+}
+
+.bookmark-title {
+  font-size: 2em;
+  background: linear-gradient(to right, #3ea55c, #b2ac49); 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.color-1 { 
+  color: #3ea55c; 
+}
+.color-2 { 
+  color: #b2ac49; 
+}
+
+
+.form-control {
+  border-radius: 5px; 
+  border: 1px solid #ced4da; 
+}
+
+#bookmarkForm button[type="submit"] {
+  width: 150px;
+  background-color: #d1512d;
+  border: none;
+  border-radius: 5px;
+  transition: opacity 0.3s ease;
+  padding: 10px;
+  cursor: pointer; 
+}
+
+#bookmarkForm button[type="submit"]:hover {
+  background-color: #bd3f1c;
+}
+
+table {
+  width: 100%; 
+}
+
+.btn {
+  padding: 5px 10px; 
+  border-radius: 5px; 
+  font-size: 1rem;
+}
+
+.btn-danger {
+  background-color: #dc3545; 
+  border: none;
+  color: white; 
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background-color: #c82333; 
+}
+
+
+@media (max-width: 768px) { 
+  .container {
+    padding: 20px; 
+  }
+  h1 {
+    font-size: 3em;
+  }
+
+  .bookmark-title {
+    font-size: 1.5em;
+  }
+}
